@@ -20,10 +20,13 @@ class Command(BaseCommand):
                 slug=faker.unique.slug(),
             )
         tags = Tag.objects.all()
-        if len(tags) > 0:
-            for _ in range(len(tags)):
-                TaggedItem.objects.create(
+        # check if tag has already create if created then skip
+        for instance in Article.objects.all():
+            for tag in tags:
+                if TaggedItem.objects.filter(
                     content_type=content_type,
-                    tag_id=randrange(1, Tag.objects.count()),
-                    object_id=randrange(1, Article.objects.count()),
-                )
+                    object_id=instance.id,
+                    tag=tag,
+                ).exists():
+                    continue
+                instance.tags.add(tag)

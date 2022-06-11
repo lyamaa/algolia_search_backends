@@ -14,7 +14,7 @@ class Command(BaseCommand):
         stdout.write("\n creating....\n")
         categories = Category.objects.all()
 
-        for _ in range(randrange(1, 500)):
+        for _ in range(randrange(1, 30)):
             for i in range(len(categories)):
                 Article.objects.create(
                     title=faker.sentence(),
