@@ -4,7 +4,7 @@ from sys import stdout
 from django.core.management import BaseCommand, call_command
 from faker import Faker
 
-from algolia_search.models import Article, Category
+from algolia_search.models import Article, Category, User
 
 
 class Command(BaseCommand):
