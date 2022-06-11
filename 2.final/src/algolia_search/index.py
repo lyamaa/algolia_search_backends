@@ -14,9 +14,8 @@ class ArticleIndex(AlgoliaIndex):
         "title",
         "description",
         "is_published",
-        "category_indexing",
-        "category_child_indexing",
         "tags_indexing",
+        "category_indexing",
         "likes_count",
     )
     settings = {
@@ -25,14 +24,12 @@ class ArticleIndex(AlgoliaIndex):
             "description",
             "tags_indexing",
             "category_indexing",
-            "category_child_indexing",
         ],
         "attributesForFaceting": [
             "title",
             "tags_indexing",
             "description",
             "category_indexing",
-            "category_child_indexing",
         ],
         "queryType": "prefixAll",
         # ** custom ranking rules with like_count
