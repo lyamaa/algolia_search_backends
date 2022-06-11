@@ -83,5 +83,4 @@ class Article(TimeStamp):
 
     @property
     def category_indexing(self):
-        # return category parent name
         return list(self.category.get_descendants())
