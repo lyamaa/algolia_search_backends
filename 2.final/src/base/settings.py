@@ -1,8 +1,12 @@
+import os
+import environ
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+env = environ.Env()
+environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-^0u+t_akvtsr3g3%uomdkqb0@&bt0xz9#0_#7ox8bwwuvw3ca$"
@@ -10,7 +14,7 @@ SECRET_KEY = "django-insecure-^0u+t_akvtsr3g3%uomdkqb0@&bt0xz9#0_#7ox8bwwuvw3ca$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -116,7 +120,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 ALGOLIA = {
-    "APPLICATION_ID": "KCHCOLM4MT",
-    "API_KEY": "574ff015ab5b1637948ed5284f8ce64e",
-    "SEARCH_API_KEY": "6f6768df27d1da217615b6bc68aa7bd6",
+    "APPLICATION_ID": os.environ.get("APPLICATION_ID"),
+    "API_KEY": os.environ.get("ADMIN_API_KEY"),
+    "SEARCH_API_KEY": os.environ.get("SEARCH_ONLY_API_KEY"),
 }

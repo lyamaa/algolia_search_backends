@@ -1,0 +1,112 @@
+[
+  {
+    "model": "algolia_search.category",
+    "pk": 1,
+    "fields": {
+      "path": "0004",
+      "depth": 1,
+      "numchild": 1,
+      "name": "Science"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 2,
+    "fields": {
+      "path": "0005",
+      "depth": 1,
+      "numchild": 2,
+      "name": "Technology"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 3,
+    "fields": {
+      "path": "0003",
+      "depth": 1,
+      "numchild": 2,
+      "name": "Medical"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 4,
+    "fields": {
+      "path": "0001",
+      "depth": 1,
+      "numchild": 2,
+      "name": "Fashion"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 5,
+    "fields": {
+      "path": "00010002",
+      "depth": 2,
+      "numchild": 0,
+      "name": "Mens"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 6,
+    "fields": {
+      "path": "00010003",
+      "depth": 2,
+      "numchild": 0,
+      "name": "Womens"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 7,
+    "fields": {
+      "path": "00030002",
+      "depth": 2,
+      "numchild": 0,
+      "name": "Health Care"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 8,
+    "fields": {
+      "path": "00030004",
+      "depth": 2,
+      "numchild": 0,
+      "name": "Medicenes"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 9,
+    "fields": {
+      "path": "00040003",
+      "depth": 2,
+      "numchild": 0,
+      "name": "Astronomy"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 10,
+    "fields": {
+      "path": "00050003",
+      "depth": 2,
+      "numchild": 0,
+      "name": "Mobile Phones"
+    }
+  },
+  {
+    "model": "algolia_search.category",
+    "pk": 11,
+    "fields": {
+      "path": "00050002",
+      "depth": 2,
+      "numchild": 0,
+      "name": "Computers"
+    }
+  }
+]
