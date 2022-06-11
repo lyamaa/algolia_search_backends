@@ -82,3 +82,8 @@ class Article(TimeStamp):
     @property
     def category_indexing(self):
         return self.category.name
+
+    @property
+    def category_child_indexing(self):
+        #  return category child as
+        return [category.name for category in self.category.get_children()]

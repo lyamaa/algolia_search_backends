@@ -22,7 +22,7 @@ class Command(BaseCommand):
                 continue
 
             # create article like
-            for obj in Article.objects.all():
+            for obj in range(randrange(1, 10)):
                 obj.likes.add(instance)
 
         stdout.write("\n Done....\n")

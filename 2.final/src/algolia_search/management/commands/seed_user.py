@@ -17,7 +17,7 @@ class Command(BaseCommand):
         faker = Faker()
         stdout.write("\n creating user....\n")
 
-        for _ in range(randrange(1, 100)):
+        for _ in range(randrange(1, 10)):
             User.objects.create(
                 username=faker.user_name(),
                 email=faker.email(),
