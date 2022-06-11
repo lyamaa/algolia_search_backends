@@ -95,4 +95,10 @@ class ArticleAdmin(admin.ModelAdmin):
     ]
 
 
+class ArticleLikeAdmin(admin.ModelAdmin):
+    list_display = ["id", "user", "article"]
+    search_fields = ["id", "user", "article"]
+
+
+admin.site.register(ArticleLike, ArticleLikeAdmin)
 admin.site.register(Article, ArticleAdmin)
